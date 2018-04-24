@@ -1,0 +1,37 @@
+body {
+  background-image: url("../image/morocco.jpg");
+  background-attachment: fixed;
+  /* width: 100%; */
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Comic Sans MS;
+
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+}
+
+Section {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  padding: 30px;
+  background-color: rgb(204, 102, 0, 0.45);
+  background-position: right;
+  width: 50%;
+  color: white;
+  box-shadow: -5px 5px 5px;
+
+}
+
+h2{
+  text-shadow: 1px 1px black;
+}
+
+footer{
+  height: 50px;
+  margin-left: 100px;
+
+}
