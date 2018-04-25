@@ -1,0 +1,96 @@
+body {
+  background-image: url("../img/airline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top {
+  background-color: #193A55;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  border-bottom: 1px solid white;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.main-menu {
+  color: white;
+  display: inline-block;
+  position:relative;
+  float: left;
+  right: 10%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.main-menu-icons {
+  float: left;
+  margin: 0 10px;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.trip-type {
+  width: 410px;
+  align-items: center;
+  height: 60px;
+  background-color: #4CAF50;
+  position: relative;
+  float: left;
+  display: inline-block;
+  justify-content: space-between;
+  top: 200px;
+  left: 60px;
+}
+
+.trip-type li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navigation {
+  background-color: #193A55;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  top: 260px;
+  left: 65px;
+  /* font-size: 20px; */
+  border-radius: 2px;
+  color: white;
+}
+
+.column {
+    float: left;
+    width: 47%;
+    margin: 5px;
+    position: relative;
+
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 111px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 25px;
+  border-radius: 2px;
+
+}
