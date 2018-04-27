@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+
+
     <header>
       <section class="top">
         <section class="atlantic">
@@ -21,53 +23,69 @@
         </section>
       </section>
     </header>
-    <section class="trip-type">
-      <ul>
-        <li><img src="./img/plane-icon.png" alt="Plane-Icon"></li>
-        <li><img src="./img/hotel-icon.png" alt="hotel-icon"></li>
-        <li><img src="./img/car-icon.png" alt="car-icon"></li>
-      </ul>
-    </section>
-    <section class="navigation">
-      <section class="row">
-        <section class="column">
-          <section class="depart">
-            <input type="text" class="depart-field" placeholder="Depart">
+
+
+    <section class="container">
+      <main>
+        <section class="container-top">
+          <ul>
+            <li><img src="./img/plane-icon.png" alt="Plane-Icon"></li>
+            <li><img src="./img/hotel-icon.png" alt="hotel-icon"></li>
+            <li><img src="./img/car-icon.png" alt="car-icon"></li>
+          </ul>
+        </section>
+
+        <form class="depart-arrive">
+
+          <section class="destination">
+            <section class="depart">
+              <input type="text" class="depart-field" placeholder="Depart">
+            </section>
+            <section class="arrive">
+              <input type="text" class="arrive-field" placeholder="Arrive">
+            </section>
           </section>
-          <section class="depart-date">
-            <input type="date">
+
+          <section class="dates">
+            <section class="depart-date">
+              <input type="date">
+            </section>
+            <section class="arrive-date">
+              <input type="date">
+            </section>
           </section>
-          <section class="passengers">
-            <p>Passengers</p>
+
+          <section class="persons">
+            <section class="passengers">
+              <p>Passengers</p>
+            </section>
+            <section class="passengers-dropdown">
+              <form class="passengers-quantity">
+                <select name="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </form>
+            </section>
           </section>
-          <section class="passengers-dropdown">
-            <form>
-              <select name="#passengers">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
+
+          <section class="rt-oneway">
+            <form action="">
+              <input class="radio" type="radio" checked><label>Roundtrip</label>
+              <input class="radio" type="radio"><label>One-way</label>
             </form>
           </section>
+
+        </form>
+
+        <section class="search-flight">
+          <button type="button">Search Flights</button>
         </section>
-        <section class="column">
-          <section class="arrive">
-            <input type="text" class="arrive-field" placeholder="Arrive">
-          </section>
-          <section class="arrive-date">
-            <input type="date">
-          </section>
-          <section class="rt-onway">
-            <input class="radio" type="radio" checked><label>Roundtrip</label>
-            <input class="radio" type="radio"><label>One-way</label>
-          </section>
-        </section>
-      </section>
-      <section class="search-flight">
-        <button type="button">Search Flights</button>
-      </section>
-    </section>
+
+      </main>
+
     </section>
   </body>
 </html>

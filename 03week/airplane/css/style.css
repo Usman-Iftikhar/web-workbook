@@ -1,5 +1,5 @@
 /* green - rgb(0, 142, 128)
-blue header - rgb(18, 55, 84)
+blue header - #193A55
 search fligh rgb(16, 101, 188) */
 
 
@@ -10,26 +10,39 @@ body {
   background-attachment: fixed;
 }
 
+/* header */
+
 .top {
-  background-color: rgb(18, 55, 84);
+  background-color: #193A55;
   width: 100%;
   display: flex;
   position: absolute;
+  right: 1px;
+  top: -1px;
   border-bottom: 1px solid white;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.atlantic {
+  position: relative;
+  left: 47px;
 }
 
 .main-menu {
   color: white;
   display: inline-block;
   position:relative;
-  float: left;
+  float: right;
   right: 10%;
   margin-left: 5%;
   box-sizing: border-box;
   /* border-radius: 2px; */
+}
+
+.main-menu li:hover {
+  cursor: pointer;
 }
 
 .main-menu-icons {
@@ -42,60 +55,100 @@ body {
   margin: 0px 10px;
 }
 
-.trip-type {
-  width: 410px;
-  align-items: center;
-  height: 60px;
-  background-color: #4CAF50;
-  position: relative;
-  float: left;
-  display: inline-block;
-  justify-content: space-between;
-  top: 200px;
-  left: 60px;
-}
+/* container with trip information */
 
-.trip-type li {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.navigation {
-  background-color: rgb(18, 55, 84);
-  height: 300px;
+.container {
+  background-color: #193A55;
+  height: 400px;
   width: 400px;
-  position: relative;
-  top: 260px;
+  position: absolute;
+  top: 200px;
   left: 65px;
   /* font-size: 20px; */
   border-radius: 2px;
   color: white;
 }
 
-.column {
-    float: left;
-    width: 47%;
-    margin: 5px;
-    position: relative;
-
+.container-top {
+  width: 101%;
+  display: inline-block;
+  align-items: center;
+  background-color: rgb(0, 142, 128);
+  position: relative;
+  right: 2px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  float: left;
 }
 
-.row:after {
-  content: "";
-  display: block;
-  clear: both;
+.container-top li:hover {
+  cursor: pointer;
+  background-color: rgb(16, 101, 188);
+  border-radius: 2px;
+}
+
+.container-top li {
+  position: relative;
+  float: left;
+  display: inline-block;
+  padding: 0 30px 0 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.depart-arrive {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
+}
+
+input[type="date"] {
+  color: white;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
+}
+
+.passengers-quantity {
+  color: white;
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
 }
 
 button {
   background-color: rgb(16, 101, 188);
   border: none;
+  box-sizing: border-box;
+  width: 90%;
   color: white;
   padding: 15px 111px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 10px 25px;
+  margin: 0px 20px;
   border-radius: 2px;
 
 }
