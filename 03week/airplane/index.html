@@ -36,48 +36,51 @@
         </section>
 
         <form class="depart-arrive">
+          <section class="row">
+            <section class="column">
+              <section class="destination">
+                <section class="depart">
+                 <input type="text" class="depart-field" placeholder="Depart">
+                </section>
+                <section class="depart-date">
+                  <input type="date">
+                </section>
+                <section class="persons">
+                  <section class="passengers">
+                    <label for="passengers-quantity">Passengers</label>
+                    <!-- <section class="passengers-dropdown"> -->
+                      <form class="passengers-quantity">
+                        <select class="quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </form>
+                    <!-- </section> -->
+                  </section>
+                  </section>
 
-          <section class="destination">
-            <section class="depart">
-              <input type="text" class="depart-field" placeholder="Depart">
+              </section>
             </section>
-            <section class="arrive">
-              <input type="text" class="arrive-field" placeholder="Arrive">
+
+            <section class="column">
+              <section class="dates">
+                <section class="arrive">
+                  <input type="text" class="arrive-field" placeholder="Arrive">
+                </section>
+                <section class="arrive-date">
+                  <input type="date">
+                </section>
+              </section>
+              <section class="rt-oneway">
+                <form class="radiobtns">
+                  <input class="radio" type="radio" name="direction" checked="checked"><label>Roundtrip</label>
+                  <input class="radio" type="radio" name="direction"><label>One-way</label>
+                </form>
+              </section>
             </section>
           </section>
-
-          <section class="dates">
-            <section class="depart-date">
-              <input type="date">
-            </section>
-            <section class="arrive-date">
-              <input type="date">
-            </section>
-          </section>
-
-          <section class="persons">
-            <section class="passengers">
-              <p>Passengers</p>
-            </section>
-            <section class="passengers-dropdown">
-              <form class="passengers-quantity">
-                <select name="quantity">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </form>
-            </section>
-          </section>
-
-          <section class="rt-oneway">
-            <form action="">
-              <input class="radio" type="radio" checked><label>Roundtrip</label>
-              <input class="radio" type="radio"><label>One-way</label>
-            </form>
-          </section>
-
         </form>
 
         <section class="search-flight">

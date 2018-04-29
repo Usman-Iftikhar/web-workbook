@@ -59,18 +59,19 @@ body {
 
 .container {
   background-color: #193A55;
-  height: 400px;
+  height: 340px;
   width: 400px;
   position: absolute;
   top: 200px;
   left: 65px;
-  /* font-size: 20px; */
+  font-size: 16px;
   border-radius: 2px;
   color: white;
 }
 
 .container-top {
   width: 101%;
+  height: 54.167px;
   display: inline-block;
   align-items: center;
   background-color: rgb(0, 142, 128);
@@ -88,13 +89,20 @@ body {
 }
 
 .container-top li {
+  box-sizing: border-box;
   position: relative;
+  bottom: 16px;
+  right: 15px;
   float: left;
   display: inline-block;
-  padding: 0 30px 0 30px;
+  padding: 0 35px;
   align-items: center;
   justify-content: space-between;
 }
+
+/* .container-top ul:first-child {
+  margin-left: -24px;
+} */
 
 .depart-arrive {
   position: relative;
@@ -105,7 +113,10 @@ body {
   width: 100%;
   padding: 20px;
   justify-content: space-between;
-  font-size: 20px;
+}
+
+.arrive, .arrive-date {
+  padding-left: 20px;
 }
 
 input[type="text"] {
@@ -125,16 +136,39 @@ input[type="date"] {
   background-color: #193A55;
   border-color: white;
   border-radius: 3px;
+  margin-top: 20px;
 }
 
-.passengers-quantity {
+.rt-oneway {
+  margin-top: 20px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.quantity {
   color: white;
-  width: 50px;
+  width: 60px;
   height: 40px;
   display: inline-block;
   background-color: #193A55;
   border-color: white;
   border-radius: 3px;
+  position: relative;
+  margin-top: 20px;
+  left: 20px;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+/*   padding: 10px; */
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 button {
@@ -151,4 +185,8 @@ button {
   margin: 0px 20px;
   border-radius: 2px;
 
+}
+
+button:hover {
+  cursor: pointer;
 }
