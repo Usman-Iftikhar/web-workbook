@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UX Atlantic</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+
+    <header>
+      <section class="top">
+        <section class="atlantic">
+          <img src="./img/logo.png" alt="UX Atlantic Logo">
+        </section>
+        <section class="main-menu">
+          <ul>
+            <li><img src="./img/home-icon.png" alt="Home"><p class="main-menu-icons">Home</p></li>
+            <li><img src="./img/deal-icon.png" alt="Deals"><p class="main-menu-icons">Travel Deals</p></li>
+            <li><img src="./img/schedule-icon.png" alt="Fligh Schedule"><p class="main-menu-icons">Flight Schedule</p></li>
+            <li><img src="./img/login-icon.png" alt="Register/Login"><p class="main-menu-icons">Register/Login</p></li>
+          </ul>
+        </section>
+      </section>
+    </header>
+
+
+    <section class="container">
+      <main>
+        <section class="container-top">
+          <ul>
+            <li><img src="./img/plane-icon.png" alt="Plane-Icon"></li>
+            <li><img src="./img/hotel-icon.png" alt="hotel-icon"></li>
+            <li><img src="./img/car-icon.png" alt="car-icon"></li>
+          </ul>
+        </section>
+
+        <form class="depart-arrive">
+          <section class="row">
+            <section class="column">
+              <section class="destination">
+                <section class="depart">
+                 <input type="text" class="depart-field" placeholder="Depart">
+                </section>
+                <section class="depart-date">
+                  <input type="date">
+                </section>
+                <section class="persons">
+                  <section class="passengers">
+                    <label for="passengers-quantity">Passengers</label>
+                    <!-- <section class="passengers-dropdown"> -->
+                      <form class="passengers-quantity">
+                        <select class="quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </form>
+                    <!-- </section> -->
+                  </section>
+                  </section>
+
+              </section>
+            </section>
+
+            <section class="column">
+              <section class="dates">
+                <section class="arrive">
+                  <input type="text" class="arrive-field" placeholder="Arrive">
+                </section>
+                <section class="arrive-date">
+                  <input type="date">
+                </section>
+              </section>
+              <section class="rt-oneway">
+                <form class="radiobtns">
+                  <input class="radio" type="radio" name="direction" checked="checked"><label>Roundtrip</label>
+                  <input class="radio" type="radio" name="direction"><label>One-way</label>
+                </form>
+              </section>
+            </section>
+          </section>
+        </form>
+
+        <section class="search-flight">
+          <button type="button">Search Flights</button>
+        </section>
+
+      </main>
+
+    </section>
+  </body>
+</html>

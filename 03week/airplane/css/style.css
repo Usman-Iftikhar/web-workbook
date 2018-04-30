@@ -1,0 +1,192 @@
+/* green - rgb(0, 142, 128)
+blue header - #193A55
+search fligh rgb(16, 101, 188) */
+
+
+body {
+  background-image: url("../img/airline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* header */
+
+.top {
+  background-color: #193A55;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  right: 1px;
+  top: -1px;
+  border-bottom: 1px solid white;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.atlantic {
+  position: relative;
+  left: 47px;
+}
+
+.main-menu {
+  color: white;
+  display: inline-block;
+  position:relative;
+  float: right;
+  right: 10%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  /* border-radius: 2px; */
+}
+
+.main-menu li:hover {
+  cursor: pointer;
+}
+
+.main-menu-icons {
+  float: right;
+  margin: 0 10px;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+/* container with trip information */
+
+.container {
+  background-color: #193A55;
+  height: 340px;
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 65px;
+  font-size: 16px;
+  border-radius: 2px;
+  color: white;
+}
+
+.container-top {
+  width: 101%;
+  height: 54.167px;
+  display: inline-block;
+  align-items: center;
+  background-color: rgb(0, 142, 128);
+  position: relative;
+  right: 2px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.container-top li:hover {
+  cursor: pointer;
+  background-color: rgb(16, 101, 188);
+  border-radius: 2px;
+}
+
+.container-top li {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 16px;
+  right: 15px;
+  float: left;
+  display: inline-block;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .container-top ul:first-child {
+  margin-left: -24px;
+} */
+
+.depart-arrive {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.arrive, .arrive-date {
+  padding-left: 20px;
+}
+
+input[type="text"] {
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
+}
+
+input[type="date"] {
+  color: white;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.rt-oneway {
+  margin-top: 20px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.quantity {
+  color: white;
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  background-color: #193A55;
+  border-color: white;
+  border-radius: 3px;
+  position: relative;
+  margin-top: 20px;
+  left: 20px;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+/*   padding: 10px; */
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+  background-color: rgb(16, 101, 188);
+  border: none;
+  box-sizing: border-box;
+  width: 90%;
+  color: white;
+  padding: 15px 111px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 20px;
+  border-radius: 2px;
+
+}
+
+button:hover {
+  cursor: pointer;
+}
