@@ -17,16 +17,9 @@ body {
 }
 
 .nasa {
-  /* font-family: 'Roboto', sans-serif; */
   color: white;
   font-size: 50px;
 }
-
-/* .info {
-  background-color: #E6E6E6;
-  margin: 20px 0px;
-  height: 324px;
-} */
 
 .info {
   background-color: #E6E6E6;
@@ -71,14 +64,6 @@ textarea {
   resize: both;
   overflow: auto;
 }
-
-/* #message input[type="text"]{
-  width: 265px;
-  height: 80px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: none;
-} */
 
 button {
   background-color: #4D4D4D;
