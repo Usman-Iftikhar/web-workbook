@@ -1,6 +1,7 @@
 body {
   width: 850px;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .image-container {
@@ -16,7 +17,7 @@ body {
 }
 
 .nasa {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   color: white;
   font-size: 50px;
 }
@@ -54,14 +55,27 @@ body {
 
 #name input[type="text"]{
   width: 265px;
+  border: none;
 }
 
-#message input[type="text"]{
+textarea {
+  min-width: 265px;
+  min-height: 80px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+  box-sizing: border-box;
+  resize: both;
+  overflow: auto;
+}
+
+/* #message input[type="text"]{
   width: 265px;
   height: 80px;
   justify-content: flex-start;
   align-items: flex-start;
-}
+  border: none;
+} */
 
 button {
   background-color: #4D4D4D;
@@ -69,6 +83,7 @@ button {
   margin-top: 5px;
   width: 70px;
   height: 30px;
+  border: none;
 }
 
 button:hover{
