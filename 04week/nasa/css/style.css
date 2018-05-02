@@ -22,13 +22,16 @@ body {
   font-size: 50px;
 }
 
+/* .info {
+  background-color: #E6E6E6;
+  margin: 20px 0px;
+  height: 324px;
+} */
+
 .info {
   background-color: #E6E6E6;
   margin: 20px 0px;
   height: 324px;
-}
-
-.info {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
