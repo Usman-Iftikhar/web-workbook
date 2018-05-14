@@ -1,0 +1,79 @@
+body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Railway', sans-serif;
+}
+
+
+/* Title image */
+.img-container {
+  background-color: #2bcdc0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.img-container span {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* bottom container with titles */
+.container {
+  background: black;
+  color: white;
+  /* height: 300px; */
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.container > div {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.box {
+  width: 15%;
+  margin-top: 40px;
+  padding: 0 10px 0 10px;
+  border-top: 30px solid;
+}
+
+.box:nth-child(1) {
+  border-color: #33a8dd;
+}
+
+.box:nth-child(2) {
+  border-color: #f46731;
+}
+
+.box:nth-child(3) {
+  border-color: #2bcdc0;
+}
+
+/* Media query - cell phone screen */
+@media (max-width: 576px) {
+  .img-container {
+    background-color: #33a8dd;
+    padding: 20px;
+  }
+
+  .container {
+    background: #f7f5f6;
+    color: #010000;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .box {
+    width: 30%;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+    border-top: 30px solid;
+  }
+
+}
