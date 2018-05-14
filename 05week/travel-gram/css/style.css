@@ -1,1 +1,145 @@
+body {
+  border: 1px solid black;
+  padding: 1em;
+}
 
+header {
+  text-align: center;
+}
+
+.container .box {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+}
+
+.content {
+  overflow: hidden;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin: 0; */
+  /* background-color:lightgray; */
+  flex-direction: column;
+  /* flex: 1; */
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.img {
+  /* background-color: yellow; /*just to test alignment*/ */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.shapes {
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: baseline; */
+  justify-content:space-between;
+  /* margin: 0; */
+}
+
+.rec {
+  width: 120px;
+  height: 20px;
+  background-color: #ff6246;
+  align-items: baseline;
+  border: 1px solid black;
+}
+
+.cir {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ff6246;
+  border: 1px solid black;
+}
+
+
+
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+  flex-direction: column;
+}
+.box3 .rec {
+  height: 40px;
+  width: 80px;
+}
+.box4 {
+  grid-area: box4;
+  flex-direction: column;
+}
+.box5 {
+  grid-area: box5;
+  flex-direction: column;
+}
+.box6 {
+  grid-area: box6;
+}
+.box7 {
+  grid-area: box7;
+  flex-direction: column;
+}
+.box8 {
+  grid-area: box8;
+  flex-direction: column;
+}
+.box9 {
+  grid-area: box9;
+  flex-direction: column;
+}
+.box10 {
+  grid-area: box10;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+/* phone view */
+@media (max-width: 576px){
+
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .box1 .box2 .box7 .box8 .box9 .box10 {
+    display: none;
+  }
+  .container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "box3 box3"
+    "box3 box3"
+    "box4 box5"
+    "box6 box6"
+  }
+}
+
+
+/* desktop view */
+@media (min-width: 992px) {
+
+}

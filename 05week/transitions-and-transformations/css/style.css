@@ -1,0 +1,79 @@
+body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.square1 {
+  background-color: maroon;
+  transition: all 2s;
+}
+.square2 {
+  background-color: lavender;
+  transition: all 2s;
+}
+.square3 {
+  background-color: yellow;
+  transition: all 2s;
+}
+.square4 {
+  background-color: blue;
+  transition: all 2s;
+}
+.square5 {
+  background-color: orange;
+  transition: all 2s;
+}
+.square6 {
+  background-color: magenta;
+  transition: all 2s;
+}
+.square7 {
+  background-color: lime;
+  transition: all 2s;
+}
+.square8 {
+  background-color: gray;
+  transition: all 2s;
+}
+.square9 {
+  background-color: olive;
+  transition: all 2s;
+}
+.square10 {
+  background-color: navy;
+  transition: all 2s;
+}
+.square11 {
+  background-color: purple;
+  transition: all 2s;
+}
+.square12 {
+  background-color: pink;
+  transition: all 2s;
+}
+
+.container:hover .square:nth-child(odd) {
+  transform: translateX(500px) scale(2) rotate(720deg);
+  transition: 4s;
+}
+
+.container:hover .square:nth-child(even) {
+  transform: translateX(-500px) scale(.5) rotate(-1440deg);
+  transition: 2s;
+}
