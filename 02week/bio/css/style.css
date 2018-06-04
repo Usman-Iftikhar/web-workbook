@@ -1,0 +1,93 @@
+body {
+  background-image: url("../image/nature.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: auto;
+  width: 700px;
+  margin-top: 80px;
+
+}
+
+.container > h1, .container > h4 {
+  color: rgb(186, 59, 16);
+  text-shadow: 0 0 3px white;
+}
+
+.container > p {
+  margin-left: 20px;
+}
+
+.links {
+  float: right;
+  margin: 5px;
+  height:75px;
+  width: 75px;
+  background-color: rgb(186, 59, 16);
+  border-radius: 75px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.links > p:hover {
+  color: white;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.box {
+  height:auto;
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(242, 242, 242, 0.7);
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.column-main {
+  float: right;
+  width: 420px;
+
+}
+
+.column-main > p::first-letter {
+  color: rgb(186, 59, 16);
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.column-links {
+  float: left;
+  width: 75px;
+  margin-top: 30px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer > p {
+  color: rgb(242, 242, 242);
+  text-align: center;
+}
